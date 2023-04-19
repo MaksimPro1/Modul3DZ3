@@ -7,67 +7,72 @@
     android:background="#F7FFFD"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:gravity="center"
         android:orientation="horizontal">
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabAdd"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="25dp"
-            android:backgroundTint="#00E0FF"
-            android:clickable="true"
-            app:backgroundTint="#00E0FF"
-            app:fabCustomSize="50dp"
-            app:srcCompat="@drawable/add" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabBrush"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="25dp"
-            android:backgroundTint="#00E0FF"
-            android:clickable="true"
-            app:backgroundTint="#00E0FF"
-            app:fabCustomSize="50dp"
-            app:srcCompat="@drawable/brush" />
+            <com.example.modul3dz3.DrawingView
+                android:id="@+id/drawingView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="#FFFFFFFF" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabErase"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="25dp"
-            android:backgroundTint="#00E0FF"
-            android:clickable="true"
-            app:backgroundTint="#00E0FF"
-            app:fabCustomSize="50dp"
-            app:srcCompat="@drawable/erase" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabBrush"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="25dp"
+                android:backgroundTint="#00E0FF"
+                android:clickable="true"
+                app:backgroundTint="#00E0FF"
+                app:fabCustomSize="50dp"
+                app:srcCompat="@drawable/brush" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabSave"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:backgroundTint="#00E0FF"
-            android:clickable="true"
-            app:backgroundTint="#00E0FF"
-            app:fabCustomSize="50dp"
-            app:srcCompat="@drawable/save" />
-    </LinearLayout>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabErase"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="25dp"
+                android:backgroundTint="#00E0FF"
+                android:clickable="true"
+                app:backgroundTint="#00E0FF"
+                app:fabCustomSize="50dp"
+                app:srcCompat="@drawable/erase" />
 
-    <com.msaggik.seventhlessonbeginningartist.DrawingView
-        android:id="@+id/drawing"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="3dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="3dp"
-        android:layout_weight="1"
-        android:background="#FFFFFFFF" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabSave"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#00E0FF"
+                android:clickable="true"
+                app:backgroundTint="#00E0FF"
+                app:fabCustomSize="50dp"
+                app:srcCompat="@drawable/save" />
+
+        </LinearLayout>
+
+        <com.example.modul3dz3.DrawingView
+            android:id="@+id/drawing"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="#FFFFFFFF" />
 
     <LinearLayout
         android:layout_width="wrap_content"
